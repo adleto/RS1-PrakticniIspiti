@@ -1,0 +1,32 @@
+﻿@model RS1_Ispit_asp.net_core.ViewModels.PredmetIndexVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Pregled</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Naziv predmeta</th>
+            <th>Akademska godina</th>
+            <th>Nastavnik</th>
+            <th>Broj održanih časova</th>
+            <th>Broj studenata</th>
+            <th>Akcije</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in Model.Rows)
+        {
+            <tr>
+                <td>@x.NazivPredmeta</td>
+                <td>@x.SkolaskaGodina</td>
+                <td>@x.NastavnikImePrezime</td>
+                <td>@x.BrojOdrzanihCasova</td>
+                <td>@x.BrojStudenata</td>
+                <td><a asp-action="Predmet" asp-route-predmetId="@x.Id">Odaberi</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+

@@ -1,0 +1,53 @@
+﻿@model RS1_Ispit_asp.net_core.ViewModels.GetStavkeIspitVM
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Učenik</th>
+            <th>Prosjek</th>
+            <th>Pristupio</th>
+            <th>Rezultat (max 100)</th>
+            <th>Akcija</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in Model.Rows)
+        {
+            <tr>
+                <td>@x.Ucenik</td>
+                <td>@x.ProsjekOcjena.ToString("F")</td>
+                <td>
+                    @if (x.Pristupio)
+                    {
+                        <a class="bg-success" ajax-poziv="da" ajax-url="/OdrzanaNastava/TogglePristupio?stavkaId=@x.StavkaId" ajax-rezultat="ajaxDiv">DA</a>
+                    }
+                    else
+                    {
+                        <a class="bg-danger" ajax-poziv="da" ajax-url="/OdrzanaNastava/TogglePristupio?stavkaId=@x.StavkaId" ajax-rezultat="ajaxDiv">NE</a>
+                    }
+                </td>
+                <td>
+                    @if (x.Pristupio)
+                    {
+                        <form ajax-poziv="da" ajax-url="/OdrzanaNastava/EditBodovi" ajax-rezultat="ajaxDiv">
+                            <input name="StavkaId" value="@x.StavkaId" type="hidden" />
+                            @if (@x.Rezultat != -1)
+                            {
+                                <input name="Bodovi" type="number" value="@x.Rezultat" />
+                            }
+                            else
+                            {
+                                <input name="Bodovi" type="number" value="" />
+                            }
+                            <input type="submit" value="Snimi" />
+                        </form>
+                    }
+                </td>
+                <td><a ajax-poziv="da" ajax-url="/OdrzanaNastava/UrediStavku?stavkaId=@x.StavkaId" ajax-rezultat="ajaxDiv">Uredi</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

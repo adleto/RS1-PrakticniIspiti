@@ -1,0 +1,52 @@
+﻿@model RS1_Ispit_asp.net_core.ViewModels.StavkePartialVM
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Učenik</th>
+            <th>Ocjena</th>
+            <th>Prisutan</th>
+            <th>Opravdano odsutan</th>
+            <th>Akcije</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in Model.Rows)
+        {
+            <tr>
+                <td>@x.ImePrezime</td>
+                <td>
+                    @if (x.Prisutan && x.Ocjena!=-1)
+                    {
+                        @x.Ocjena
+                    }
+                </td>
+                <td>
+                    @if (x.Prisutan)
+                    {
+                        <a ajax-poziv='da' ajax-url="/OdrzanaNastava/TogglePrisutan?stavkaId=@x.StavkaId" ajax-rezultat="ajaxDiv" class="bg-success">Prisutan</a>
+                    }
+                    else
+                    {
+                        <a ajax-poziv='da' ajax-url="/OdrzanaNastava/TogglePrisutan?stavkaId=@x.StavkaId" ajax-rezultat="ajaxDiv" class="bg-danger">Odsutan</a>
+                    }
+                </td>
+                <td>
+                    @if (!x.Prisutan && x.OpravdanoOdsutan)
+                    {
+                        <span>DA</span>
+                    }
+                    else if (!x.Prisutan && !x.OpravdanoOdsutan)
+                    {
+                        <span>NE</span>
+                    }
+                </td>
+                <td>
+                    <a ajax-poziv='da' ajax-url="/OdrzanaNastava/EditStavka?stavkaId=@x.StavkaId" ajax-rezultat="ajaxDiv">Uredi</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

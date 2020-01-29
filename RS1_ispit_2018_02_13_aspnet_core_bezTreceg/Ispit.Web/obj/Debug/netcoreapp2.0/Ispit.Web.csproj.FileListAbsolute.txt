@@ -1,0 +1,43 @@
+C:\Users\Adil Joldic\Source\Repos\rs1_ispit_2018_02_13\Ispit.Web\obj\Debug\netcoreapp2.0\Ispit.Web.csprojResolveAssemblyReference.cache
+C:\Users\Adil Joldic\Source\Repos\rs1_ispit_2018_02_13\Ispit.Web\obj\Debug\netcoreapp2.0\Ispit.Web.csproj.CoreCompileInputs.cache
+C:\Users\Adil Joldic\Source\Repos\rs1_ispit_2018_02_13\Ispit.Web\obj\Debug\netcoreapp2.0\Ispit.Web.AssemblyInfoInputs.cache
+C:\Users\Adil Joldic\Source\Repos\rs1_ispit_2018_02_13\Ispit.Web\obj\Debug\netcoreapp2.0\Ispit.Web.AssemblyInfo.cs
+C:\Users\Adil Joldic\Source\Repos\rs1_ispit_2018_02_13\Ispit.Web\bin\Debug\netcoreapp2.0\Ispit.Web.deps.json
+C:\Users\Adil Joldic\Source\Repos\rs1_ispit_2018_02_13\Ispit.Web\bin\Debug\netcoreapp2.0\Ispit.Web.runtimeconfig.json
+C:\Users\Adil Joldic\Source\Repos\rs1_ispit_2018_02_13\Ispit.Web\bin\Debug\netcoreapp2.0\Ispit.Web.runtimeconfig.dev.json
+C:\Users\Adil Joldic\Source\Repos\rs1_ispit_2018_02_13\Ispit.Web\bin\Debug\netcoreapp2.0\Ispit.Web.dll
+C:\Users\Adil Joldic\Source\Repos\rs1_ispit_2018_02_13\Ispit.Web\bin\Debug\netcoreapp2.0\Ispit.Web.pdb
+C:\Users\Adil Joldic\Source\Repos\rs1_ispit_2018_02_13\Ispit.Web\bin\Debug\netcoreapp2.0\Ispit.Data.dll
+C:\Users\Adil Joldic\Source\Repos\rs1_ispit_2018_02_13\Ispit.Web\bin\Debug\netcoreapp2.0\Ispit.Data.pdb
+C:\Users\Adil Joldic\Source\Repos\rs1_ispit_2018_02_13\Ispit.Web\obj\Debug\netcoreapp2.0\Ispit.Web.dll
+C:\Users\Adil Joldic\Source\Repos\rs1_ispit_2018_02_13\Ispit.Web\obj\Debug\netcoreapp2.0\Ispit.Web.pdb
+D:\Users\adil\Downloads\rs1_ispit_2018_02_13\Ispit.Web\bin\Debug\netcoreapp2.0\Ispit.Web.deps.json
+D:\Users\adil\Downloads\rs1_ispit_2018_02_13\Ispit.Web\bin\Debug\netcoreapp2.0\Ispit.Web.runtimeconfig.json
+D:\Users\adil\Downloads\rs1_ispit_2018_02_13\Ispit.Web\bin\Debug\netcoreapp2.0\Ispit.Web.runtimeconfig.dev.json
+D:\Users\adil\Downloads\rs1_ispit_2018_02_13\Ispit.Web\bin\Debug\netcoreapp2.0\Ispit.Web.dll
+D:\Users\adil\Downloads\rs1_ispit_2018_02_13\Ispit.Web\bin\Debug\netcoreapp2.0\Ispit.Web.pdb
+D:\Users\adil\Downloads\rs1_ispit_2018_02_13\Ispit.Web\bin\Debug\netcoreapp2.0\Ispit.Data.dll
+D:\Users\adil\Downloads\rs1_ispit_2018_02_13\Ispit.Web\bin\Debug\netcoreapp2.0\Ispit.Data.pdb
+D:\Users\adil\Downloads\rs1_ispit_2018_02_13\Ispit.Web\obj\Debug\netcoreapp2.0\Ispit.Web.csprojResolveAssemblyReference.cache
+D:\Users\adil\Downloads\rs1_ispit_2018_02_13\Ispit.Web\obj\Debug\netcoreapp2.0\Ispit.Web.csproj.CoreCompileInputs.cache
+D:\Users\adil\Downloads\rs1_ispit_2018_02_13\Ispit.Web\obj\Debug\netcoreapp2.0\Ispit.Web.AssemblyInfoInputs.cache
+D:\Users\adil\Downloads\rs1_ispit_2018_02_13\Ispit.Web\obj\Debug\netcoreapp2.0\Ispit.Web.AssemblyInfo.cs
+D:\Users\adil\Downloads\rs1_ispit_2018_02_13\Ispit.Web\obj\Debug\netcoreapp2.0\Ispit.Web.dll
+D:\Users\adil\Downloads\rs1_ispit_2018_02_13\Ispit.Web\obj\Debug\netcoreapp2.0\Ispit.Web.pdb
+E:\WORKFOLDER\Faks\RS1\prakticni\Ispit_2018_02_13\rs1_ispit_2018_02_13_radni\Ispit.Web\bin\Debug\netcoreapp2.0\appsettings.Development.json
+E:\WORKFOLDER\Faks\RS1\prakticni\Ispit_2018_02_13\rs1_ispit_2018_02_13_radni\Ispit.Web\bin\Debug\netcoreapp2.0\appsettings.json
+E:\WORKFOLDER\Faks\RS1\prakticni\Ispit_2018_02_13\rs1_ispit_2018_02_13_radni\Ispit.Web\bin\Debug\netcoreapp2.0\bundleconfig.json
+E:\WORKFOLDER\Faks\RS1\prakticni\Ispit_2018_02_13\rs1_ispit_2018_02_13_radni\Ispit.Web\bin\Debug\netcoreapp2.0\Properties\launchSettings.json
+E:\WORKFOLDER\Faks\RS1\prakticni\Ispit_2018_02_13\rs1_ispit_2018_02_13_radni\Ispit.Web\bin\Debug\netcoreapp2.0\Ispit.Web.deps.json
+E:\WORKFOLDER\Faks\RS1\prakticni\Ispit_2018_02_13\rs1_ispit_2018_02_13_radni\Ispit.Web\bin\Debug\netcoreapp2.0\Ispit.Web.runtimeconfig.json
+E:\WORKFOLDER\Faks\RS1\prakticni\Ispit_2018_02_13\rs1_ispit_2018_02_13_radni\Ispit.Web\bin\Debug\netcoreapp2.0\Ispit.Web.runtimeconfig.dev.json
+E:\WORKFOLDER\Faks\RS1\prakticni\Ispit_2018_02_13\rs1_ispit_2018_02_13_radni\Ispit.Web\bin\Debug\netcoreapp2.0\Ispit.Web.dll
+E:\WORKFOLDER\Faks\RS1\prakticni\Ispit_2018_02_13\rs1_ispit_2018_02_13_radni\Ispit.Web\bin\Debug\netcoreapp2.0\Ispit.Web.pdb
+E:\WORKFOLDER\Faks\RS1\prakticni\Ispit_2018_02_13\rs1_ispit_2018_02_13_radni\Ispit.Web\bin\Debug\netcoreapp2.0\Ispit.Data.dll
+E:\WORKFOLDER\Faks\RS1\prakticni\Ispit_2018_02_13\rs1_ispit_2018_02_13_radni\Ispit.Web\bin\Debug\netcoreapp2.0\Ispit.Data.pdb
+E:\WORKFOLDER\Faks\RS1\prakticni\Ispit_2018_02_13\rs1_ispit_2018_02_13_radni\Ispit.Web\obj\Debug\netcoreapp2.0\Ispit.Web.csprojAssemblyReference.cache
+E:\WORKFOLDER\Faks\RS1\prakticni\Ispit_2018_02_13\rs1_ispit_2018_02_13_radni\Ispit.Web\obj\Debug\netcoreapp2.0\Ispit.Web.AssemblyInfoInputs.cache
+E:\WORKFOLDER\Faks\RS1\prakticni\Ispit_2018_02_13\rs1_ispit_2018_02_13_radni\Ispit.Web\obj\Debug\netcoreapp2.0\Ispit.Web.AssemblyInfo.cs
+E:\WORKFOLDER\Faks\RS1\prakticni\Ispit_2018_02_13\rs1_ispit_2018_02_13_radni\Ispit.Web\obj\Debug\netcoreapp2.0\Ispit.Web.csproj.CopyComplete
+E:\WORKFOLDER\Faks\RS1\prakticni\Ispit_2018_02_13\rs1_ispit_2018_02_13_radni\Ispit.Web\obj\Debug\netcoreapp2.0\Ispit.Web.dll
+E:\WORKFOLDER\Faks\RS1\prakticni\Ispit_2018_02_13\rs1_ispit_2018_02_13_radni\Ispit.Web\obj\Debug\netcoreapp2.0\Ispit.Web.pdb

@@ -1,0 +1,38 @@
+﻿@model RS1_Ispit_asp.net_core.ViewModels.IndexVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Naziv predmeta</th>
+            <th>Akademska godina</th>
+            <th>Ime i prezime nastavnika</th>
+            <th>Broj održanih časova</th>
+            <th>Studenata na predmetu</th>
+            <th>Akcija</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in Model.Rows)
+        {
+            @foreach (var i in x.InsideRows)
+            {
+                <tr>
+                    @if (x.InsideRows.IndexOf(i) == 0)
+                    {
+                        <td rowspan="@(x.InsideRows.Count)">@x.NazivPredmeta</td>
+                    }
+                    <td>@i.SkolskaGodina</td>
+                    <td>@i.Nastavnik</td>
+                    <td>@i.OdrzanoCasova</td>
+                    <td>@i.StudenataNaPredmetu</td>
+                    <td><a asp-action="Ispiti" asp-route-angazovanId="@i.AngazovanId">Odaberi</a></td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+

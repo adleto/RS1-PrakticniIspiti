@@ -1,0 +1,26 @@
+﻿@model RS1_Ispit_asp.net_core.ViewModels.UrediIspitVM
+@{
+    ViewData["Title"] = "UrediIspit";
+}
+<form asp-action="UrediIspit">
+    <input asp-for="IspitId" type="hidden" />
+    Datum: @Model.Datum
+    <br />
+    Predmet: @Model.Predmet
+    <br />
+    Napomena:
+    <input asp-for="Napomena" />
+    <br />
+    <input type="submit" value="Snimi" />
+</form>
+
+<div id="ajaxDiv"></div>
+
+<script>
+    $(function () {
+        $.get("/OdrzanaNastava/GetStavkeIspit?ispitId=@Model.IspitId", function (data) {
+            $("#ajaxDiv").html(data);
+        })
+    })
+</script>
+

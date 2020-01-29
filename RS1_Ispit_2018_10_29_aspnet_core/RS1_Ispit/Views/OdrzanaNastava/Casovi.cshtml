@@ -1,0 +1,47 @@
+﻿@model RS1_Ispit_asp.net_core.ViewModels.NastavaCasoviVM
+@{
+    ViewData["Title"] = "Casovi";
+}
+
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Datum održanog časa</th>
+            <th>Školska godina/odjeljenje</th>
+            <th>Predmet</th>
+            <th>Odsutni učenici</th>
+            <th>Akcije</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in Model.Rows)
+        {
+            <tr>
+                <td>@x.DatumCasa</td>
+                <td>@x.GodinaOdjeljenje</td>
+                <td>@x.Predmet</td>
+                <td>
+                    @foreach (var u in x.OdsutniUcenici)
+                    {
+                        if (x.OdsutniUcenici.IndexOf(u) == x.OdsutniUcenici.Count - 1)
+                        {
+                            <span>@u</span>
+                        }
+                        else
+                        {
+                            <span>@(u), </span>
+                        }
+                    }
+                </td>
+                <td>
+                    <a asp-action="EditCas" asp-route-casId="@x.CasId">Edit</a> |
+                    <a asp-action="ObrisiCas" asp-route-casId="@x.CasId">Obrisi</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a class="btn btn-default" asp-action="DodajCas" asp-route-nastavnikId="@Model.NastavnikId">Dodaj</a>
+
+

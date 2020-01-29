@@ -1,0 +1,37 @@
+﻿@model Ispit.Web.ViewModels.GetObavezeVM
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Naziv</th>
+            <th>Procenat</th>
+            <th>Notifikacija dana</th>
+            <th>Ponavljaj notifikaciju</th>
+            <th>Akcija</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in Model.Rows)
+        {
+            <tr>
+                <td>@x.Naziv</td>
+                <td>@x.ProcentualnoStanje</td>
+                <td>@x.SaljiNotifikacijuDana</td>
+                <td>
+                    @if (x.PonavljajNotifikaciju)
+                    {
+                        <span>DA</span>
+                    }
+                    else
+                    {
+                        <span>NE</span>
+                    }
+            </td>
+            <td>
+                <a ajax-poziv="da" ajax-rezultat="ajaxDiv" ajax-url="/OznaceniDogadaji/Uredi?stanjeId=@x.IdStanjeObaveze">Uredi</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

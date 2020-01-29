@@ -1,0 +1,24 @@
+﻿@model RS1_Ispit_asp.net_core.ViewModels.DetaljiVM
+@{
+    ViewData["Title"] = "Detalji";
+}
+
+Predmet: @Model.Ispit.Angazovan.Predmet.Naziv
+<br />
+Nastavnik: @Model.Ispit.Angazovan.Nastavnik.Ime <span> </span> @Model.Ispit.Angazovan.Nastavnik.Prezime
+<br />
+Školska godina : @Model.Ispit.Angazovan.AkademskaGodina.Opis
+<br />
+Datum : @Model.Ispit.Datum.ToString("dd.MM.yyyy")
+<br />
+
+<div id="ajaxDiv"></div>
+
+<script>
+    $(function () {
+        $.get("/Predmet/GetStudentIspit?ispitId=@Model.Ispit.Id", function (data) {
+            $("#ajaxDiv").html(data);
+        });
+    });
+</script>
+

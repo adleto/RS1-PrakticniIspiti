@@ -1,0 +1,25 @@
+﻿@model RS1_Ispit_asp.net_core.ViewModels.IndexVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Škola</th>
+            <th>Nastavnik</th>
+            <th>Akcija</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in Model.Rows)
+        {
+            <tr>
+                <td>@x.Skola</td>
+                <td>@x.Nastavnik</td>
+                <td><a asp-action="Nastavnik" asp-route-nastavnikId="@x.Id">Odaberi</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+

@@ -1,0 +1,41 @@
+﻿@model RS1_Ispit_asp.net_core.ViewModels.NastavnikVM
+@{
+    ViewData["Title"] = "Nastavnik";
+}
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Datum</th>
+            <th>Škola</th>
+            <th>Predmet</th>
+            <th>Nisu pristupili</th>
+            <th>Akcija</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in Model.Rows)
+        {
+            <tr>
+                <td>@x.Datum</td>
+                <td>@x.Skola</td>
+                <td>@x.Predmet</td>
+                <td>
+                    @foreach (var u in x.NisuPristupili)
+                    {
+                        if (x.NisuPristupili.IndexOf(u) == x.NisuPristupili.Count - 1)
+                        {
+                            <span>@(u)</span>
+                        }
+                        else
+                        {
+                            <span>@(u),</span>
+                        }
+                    }
+                </td>
+                <td><a asp-action="UrediIspit" asp-route-ispitId="@x.IspitId">Uredi</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a class="btn btn-default" asp-action="DodajIspit" asp-route-nastavnikId="@Model.NastavnikId">Dodaj</a>

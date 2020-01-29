@@ -1,0 +1,55 @@
+﻿@model RS1_Ispit_asp.net_core.ViewModels.StudentIspitPartialVM
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Student</th>
+            <th>Pristupio ispitu</th>
+            <th>Ocjena</th>
+            <th>Akcije</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in Model.StudentIspitList)
+        {
+            <tr>
+                <td>@(x.SlusaPredmet.UpisGodine.Student.Ime + " " + x.SlusaPredmet.UpisGodine.Student.Prezime)</td>
+                <td>
+                    @if (x.PristupioIspitu)
+                    {
+                        @if (!x.Ispit.Zakljucano)
+                        {
+                            <a ajax-poziv='da' ajax-url="/Predmet/TogglePristupio?id=@x.Id" ajax-rezultat="ajaxDiv"><span class="text-success">Pristupio</span></a>
+                        }
+                        else
+                        {
+                            <span class="text-success">Pristupio</span>
+                        }
+
+                    }
+                    else
+                    {
+                        @if (!x.Ispit.Zakljucano)
+                        {
+                            <a ajax-poziv='da' ajax-url="/Predmet/TogglePristupio?id=@x.Id" ajax-rezultat="ajaxDiv"><span class="text-danger">Nije pristupio</span></a>
+                        }
+                        else
+                        {
+                            <span class="text-danger">Nije pristupio</span>
+                        }
+                    }
+                </td>
+                <td>
+                    @if (x.Ocjena > -1)
+                    {
+                        @x.Ocjena
+                    }
+                </td>
+                <td><a>Uredi</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

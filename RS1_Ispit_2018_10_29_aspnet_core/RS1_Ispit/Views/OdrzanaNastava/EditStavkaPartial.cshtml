@@ -1,0 +1,34 @@
+﻿@model RS1_Ispit_asp.net_core.ViewModels.EditStavkaVM
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+Ucenik: @Model.UcenikIme
+<br />
+@if (Model.Prisutan)
+{
+    <form ajax-poziv='da' ajax-url="/OdrzanaNastava/EditStavka" ajax-rezultat="ajaxDiv">
+        <input asp-for="Napomena" type="hidden" />
+        <input asp-for="StavkaId" type="hidden" />
+        <input asp-for="OpravdanoOdsutan" type="hidden" />
+        @if (Model.Ocjena == -1)
+        {
+            <span>Ocjena: <input name="Ocjena" value="" /><br /></span>
+        }
+        else
+        {
+            <span>Ocjena: <input asp-for="Ocjena" /><br /></span>
+        }
+        <input type="submit" value="Snimi" />
+
+    </form>
+}
+else
+{
+    <form ajax-poziv='da' ajax-url="/OdrzanaNastava/EditStavka" ajax-rezultat="ajaxDiv">
+        <input asp-for="StavkaId" type="hidden" />
+        <input asp-for="Ocjena" type="hidden" />
+        Napomena: <input asp-for="Napomena" /><br />
+        Opravdano odsutan: <input asp-for="OpravdanoOdsutan" /><br />
+        <input type="submit" value="Snimi" />
+    </form>
+}

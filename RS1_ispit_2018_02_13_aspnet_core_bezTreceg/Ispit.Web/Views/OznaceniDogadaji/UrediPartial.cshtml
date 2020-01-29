@@ -1,0 +1,11 @@
+﻿@model Ispit.Web.ViewModels.UrediVM
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<form ajax-poziv='da' ajax-rezultat="ajaxDiv" ajax-url="/OznaceniDogadaji/Uredi">
+    Obaveza: @Model.Naziv<br />
+    Završeno procentualno: <input name="Procentualno" type="number" value="@(@Model.Procentualno*100)" />%<br />
+    <input asp-for="Id" type="hidden" />
+    <input type="submit" />
+</form>
+

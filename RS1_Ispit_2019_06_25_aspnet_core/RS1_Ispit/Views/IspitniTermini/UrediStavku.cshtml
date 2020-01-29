@@ -1,0 +1,20 @@
+﻿@model RS1_Ispit_asp.net_core.ViewModels.UrediDodajStavkaVM
+
+
+    <form ajax-poziv="da" ajax-url="/IspitniTermini/UrediStavku" ajax-rezultat="ajaxDiv">
+        Student: @Model.Student
+        <br />
+        Ocjena:
+
+        @if (Model.Ocjena == -1)
+        {
+            <input name="Ocjena" type="number" />
+        }
+        else
+        {
+            <input asp-for= "Ocjena" />
+        }
+        <br />
+        <input asp-for="StavkaId" type="hidden" />
+        <input type="submit" value="Snimi" />
+    </form>

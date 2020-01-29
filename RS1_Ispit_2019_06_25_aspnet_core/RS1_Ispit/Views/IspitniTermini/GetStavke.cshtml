@@ -1,0 +1,80 @@
+﻿@model RS1_Ispit_asp.net_core.ViewModels.GetStavkeVM
+
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Student</th>
+            <th>Pristupio ispitu</th>
+            <th>Ocjena</th>
+            <th>Akcija</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in Model.Rows)
+        {
+            <tr>
+                <td>@x.Student</td>
+                <td>
+                    @if (!Model.Zakljucan)
+                    {
+                        @if (x.Pristupio)
+                        {
+                            <a class="bg-success" ajax-poziv="da" ajax-url="/IspitniTermini/PristupioToggle?stavkaId=@x.StavkaId" ajax-rezultat="ajaxDiv">DA</a>
+                        }
+                        else
+                        {
+                            <a class="bg-danger" ajax-poziv="da" ajax-url="/IspitniTermini/PristupioToggle?stavkaId=@x.StavkaId" ajax-rezultat="ajaxDiv">NE</a>
+                        }
+                    }
+                    else
+                    {
+                        @if (x.Pristupio)
+                        {
+                            <span>DA</span>
+                        }
+                        else
+                        {
+                            <span>NE</span>
+                        }
+                    }
+                </td>
+                <td>
+                    @if (Model.Zakljucan && x.Pristupio && x.Ocjena != -1)
+                    {
+                        <span>@x.Ocjena</span>
+                    }
+                    else if (!Model.Zakljucan && x.Pristupio)
+                    {
+                        if (x.Ocjena == -1)
+                        {
+                            <form ajax-poziv="da" ajax-url="/IspitniTermini/Ocjena" ajax-rezultat="ajaxDiv">
+                                <input type="number" name="Ocjena" />
+                                <input type="hidden" name="StavkaId" value="@x.StavkaId" />
+                                <input type="submit" value="Snimi" />
+                            </form>
+                        }
+                        else
+                        {
+                            <form ajax-poziv="da" ajax-url="/IspitniTermini/Ocjena" ajax-rezultat="ajaxDiv">
+                                <input asp-for="@x.Ocjena" name="Ocjena" />
+                                <input type="hidden" name="StavkaId" value="@x.StavkaId" />
+                                <input type="submit" value="Snimi" />
+                            </form>
+                        }
+                    }
+                </td>
+                <td>
+                    @if (x.Pristupio && !Model.Zakljucan && DateTime.Now > Model.Datum)
+                    {
+                        <a ajax-poziv="da" ajax-url="/IspitniTermini/UrediStavku?stavkaId=@x.StavkaId" ajax-rezultat="ajaxDiv">Uredi</a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@if (!Model.Zakljucan)
+{
+    <a ajax-poziv="da" ajax-url="/IspitniTermini/DodajStavku?ispitId=@Model.IspitId" ajax-rezultat="ajaxDiv">Dodaj</a>
+}

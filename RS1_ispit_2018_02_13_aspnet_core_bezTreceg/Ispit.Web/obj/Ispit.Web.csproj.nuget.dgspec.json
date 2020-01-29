@@ -1,0 +1,160 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\WORKFOLDER\\Faks\\RS1\\prakticni\\Ispit_2018_02_13\\rs1_ispit_2018_02_13_radni\\Ispit.Web\\Ispit.Web.csproj": {}
+  },
+  "projects": {
+    "E:\\WORKFOLDER\\Faks\\RS1\\prakticni\\Ispit_2018_02_13\\rs1_ispit_2018_02_13_radni\\Ispit.Data\\Ispit.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\WORKFOLDER\\Faks\\RS1\\prakticni\\Ispit_2018_02_13\\rs1_ispit_2018_02_13_radni\\Ispit.Data\\Ispit.Data.csproj",
+        "projectName": "Ispit.Data",
+        "projectPath": "E:\\WORKFOLDER\\Faks\\RS1\\prakticni\\Ispit_2018_02_13\\rs1_ispit_2018_02_13_radni\\Ispit.Data\\Ispit.Data.csproj",
+        "packagesPath": "C:\\Users\\tronW\\.nuget\\packages\\",
+        "outputPath": "E:\\WORKFOLDER\\Faks\\RS1\\prakticni\\Ispit_2018_02_13\\rs1_ispit_2018_02_13_radni\\Ispit.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\tronW\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\WORKFOLDER\\Faks\\RS1\\prakticni\\Ispit_2018_02_13\\rs1_ispit_2018_02_13_radni\\Ispit.Web\\Ispit.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\WORKFOLDER\\Faks\\RS1\\prakticni\\Ispit_2018_02_13\\rs1_ispit_2018_02_13_radni\\Ispit.Web\\Ispit.Web.csproj",
+        "projectName": "Ispit.Web",
+        "projectPath": "E:\\WORKFOLDER\\Faks\\RS1\\prakticni\\Ispit_2018_02_13\\rs1_ispit_2018_02_13_radni\\Ispit.Web\\Ispit.Web.csproj",
+        "packagesPath": "C:\\Users\\tronW\\.nuget\\packages\\",
+        "outputPath": "E:\\WORKFOLDER\\Faks\\RS1\\prakticni\\Ispit_2018_02_13\\rs1_ispit_2018_02_13_radni\\Ispit.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\tronW\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.0": {
+            "projectReferences": {
+              "E:\\WORKFOLDER\\Faks\\RS1\\prakticni\\Ispit_2018_02_13\\rs1_ispit_2018_02_13_radni\\Ispit.Data\\Ispit.Data.csproj": {
+                "projectPath": "E:\\WORKFOLDER\\Faks\\RS1\\prakticni\\Ispit_2018_02_13\\rs1_ispit_2018_02_13_radni\\Ispit.Data\\Ispit.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.All": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
